@@ -210,18 +210,22 @@ class DiscoGAN(object):
     def test(self, args, test_data):
         A_data_with_class, B_data_with_class = test_data
         for key, value in A_data_with_class.items():
-            batch_idxs = len(value) // self.batch_size
+            plot(value, 'k.')
+        for key, value in B_data_with_class.items():
+            plot(value, 'k.')
+        batch_idxs = len(value) // self.batch_size
+        for key, value in A_data_with_class.items():
             for idx in xrange(batch_idxs) :
                 batch_A=value[idx*self.batch_size:(idx+1)*self.batch_size]
                 fake_b = self.sess.run(self.G_AB, feed_dict={self.real_A: batch_A})
-                plot(batch_A, 'k.')
                 plot(fake_b, 'b.')
         for key, value in B_data_with_class.items():
-            batch_idxs = len(value) // self.batch_size
             for idx in xrange(batch_idxs) :
-                batch_B = value[idx*self.batch_size:(idx+1)*self.batch_size]
+                batch_B =value[idx*self.batch_size:(idx+1)*self.batch_size]
                 fake_a = self.sess.run(self.G_BA, feed_dict={self.real_B: batch_B})
-                plot(batch_B, 'k.')
                 plot(fake_a, 'r.')
+
+
+
         plt.savefig(os.path.join(args.result_dir, 'test_result'))
 

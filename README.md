@@ -15,7 +15,6 @@ Result of samples from 2-dimensional Gaussian mixture models result
 
 Train model:
     $ python main.py --is_train True
-
 Test model:
     $ python main.py --is_Test True
 

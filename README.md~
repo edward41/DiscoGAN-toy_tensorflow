@@ -14,10 +14,10 @@ Result of samples from 2-dimensional Gaussian mixture models result
 * And learning rate is 0.002
 
 Train model:
-	$ python main.py --is_train True
+    $ python main.py --is_train True
 
 Test model:
-	$ python main.py --is_Test True
+    $ python main.py --is_Test True
 
 ##Result
 

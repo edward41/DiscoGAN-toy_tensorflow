@@ -14,16 +14,24 @@ Result of samples from 2-dimensional Gaussian mixture models result
 * And learning rate is 0.002
 
 ####....during Training
-**# iteration: 0**:
+
+**# iteration: 0**
+
 <img src="result/0.png">
-**# iteration: 500**:
+
+**# iteration: 500**
+
 <img src="result/500.png">
-**# iteration: 1000**:
+
+**# iteration: 1000**
+
 <img src="result/1000.png">
 
 ......
-**# iteration: 4000**:
+
+**# iteration: 4000**
+
 <img src="result/4000.png">
 
-####....After training, test experiment
+###....After training, test experiment
 <img src="result/test_result.png">

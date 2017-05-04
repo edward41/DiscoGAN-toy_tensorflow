@@ -18,9 +18,9 @@ Train model:
 Test model:
     $ python main.py --is_Test True
 
-##Result
+## Result
 
-####....during Training
+#### ....during Training
 
 **# iteration: 0**
 
@@ -40,5 +40,5 @@ Test model:
 
 <img src="result/4000.png">
 
-###....After training, test experiment
+#### ....After training, test experiment
 <img src="result/test_result.png">

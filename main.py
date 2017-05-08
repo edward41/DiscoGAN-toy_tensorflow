@@ -25,7 +25,7 @@ def main(_):
     if (os.path.isdir(args.result_dir) == False):
         os.mkdir(args.result_dir)
     else :
-        if(args.is_train==True and args.is_result_clear == True) :
+        if(args.is_train==True and args.is_resultclr == True) :
             file_clear(args.result_dir)
 
     A_data_with_class, A_data = generate_data(13, 3, radius=2, center=(-2, -2))

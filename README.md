@@ -11,7 +11,7 @@ Result of samples from 2-dimensional Gaussian mixture models result
 
 * This model is different from the author's code, and carpedm20's code
 * My Discriminative model included 'batch_normalization' layer and used Xavier initializer.
-* And learning rate is 0.002
+* And My learning rate is 0.001
 
 Train model:
 <pre><code>$ python main.py --is_train True</code></pre>
